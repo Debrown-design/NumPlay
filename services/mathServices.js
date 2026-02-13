@@ -5,9 +5,9 @@ export const generateMathQuestion = (gradeLevel) => {
   
   const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-  // Grade-Specific Logic
+
   switch (gradeLevel) {
-    case 1: // Grade 1: Basic Addition (1-10)
+    case 1: 
       {
         const a = randomInt(1, 10);
         const b = randomInt(1, 10);
@@ -15,7 +15,7 @@ export const generateMathQuestion = (gradeLevel) => {
         answer = a + b;
       }
       break;
-    case 2: // Grade 2: Subtraction (10-30)
+    case 2: 
       {
         const a = randomInt(10, 30);
         const b = randomInt(1, a);
@@ -23,7 +23,7 @@ export const generateMathQuestion = (gradeLevel) => {
         answer = a - b;
       }
       break;
-    case 3: // Grade 3: Multiplication Tables (2-10)
+    case 3: 
       {
         const a = randomInt(2, 10);
         const b = randomInt(2, 10);
@@ -31,7 +31,7 @@ export const generateMathQuestion = (gradeLevel) => {
         answer = a * b;
       }
       break;
-    case 4: // Grade 4: Simple Division
+    case 4: 
       {
         const b = randomInt(2, 9);
         const ans = randomInt(2, 9);
@@ -40,7 +40,7 @@ export const generateMathQuestion = (gradeLevel) => {
         answer = ans;
       }
       break;
-    case 5: // Grade 5: Mixed Ops & Parentheses
+    case 5: 
       {
         const a = randomInt(5, 15);
         const b = randomInt(2, 4);
@@ -49,14 +49,14 @@ export const generateMathQuestion = (gradeLevel) => {
         answer = (a * b) + c;
       }
       break;
-    case 6: // Grade 6: Exponents (Squares)
+    case 6: 
       {
         const a = randomInt(2, 12);
         q = `${a}² = ?`;
         answer = a * a;
       }
       break;
-    case 7: // Grade 7: Negative Integers
+    case 7: 
       {
         const a = randomInt(-10, 10);
         const b = randomInt(1, 20);
@@ -64,7 +64,7 @@ export const generateMathQuestion = (gradeLevel) => {
         answer = a - b;
       }
       break;
-    case 8: // Grade 8: Basic Algebra (Solve for x)
+    case 8: 
       {
         const x = randomInt(2, 10);
         const a = randomInt(2, 5);
@@ -74,7 +74,7 @@ export const generateMathQuestion = (gradeLevel) => {
         answer = x;
       }
       break;
-    case 9: // Grade 9: Slope & Intercept
+    case 9: 
       {
         const m = randomInt(2, 6);
         const b = randomInt(1, 20);
@@ -88,7 +88,7 @@ export const generateMathQuestion = (gradeLevel) => {
         }
       }
       break;
-    case 10: // Grade 10: Geometry (Area/Volume)
+    case 10: 
       {
         const side = randomInt(4, 12);
         const type = randomInt(1, 2);
@@ -102,7 +102,7 @@ export const generateMathQuestion = (gradeLevel) => {
         }
       }
       break;
-    case 11: // Grade 11: Square Roots & Quadratics
+    case 11: 
       {
         const x = randomInt(4, 15);
         const type = randomInt(1, 2);
@@ -117,7 +117,7 @@ export const generateMathQuestion = (gradeLevel) => {
         }
       }
       break;
-    case 12: // Grade 12: Advanced (Log/Trig)
+    case 12: 
       {
         const type = randomInt(1, 2);
         if (type === 1) {
@@ -140,7 +140,7 @@ export const generateMathQuestion = (gradeLevel) => {
       }
   }
 
-  // Option Generation
+  
   options = [answer.toString()];
   while (options.length < 4) {
     const offset = randomInt(-5, 5);
@@ -163,10 +163,10 @@ export const generateIntegerQuestion = (level = 1) => {
   const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
   
   let q, answer;
-  const category = randomInt(1, 5); // 5 Math Categories for Ages 10-14
+  const category = randomInt(1, 5); 
 
   switch (category) {
-    case 1: // Advanced Integers
+    case 1: 
       {
         const a = randomInt(-25, 25);
         const b = randomInt(-25, 25);
@@ -175,7 +175,7 @@ export const generateIntegerQuestion = (level = 1) => {
         answer = op === '+' ? a + b : a - b;
       }
       break;
-    case 2: // One-Step Algebra
+    case 2: 
       {
         const x = randomInt(-10, 15);
         const b = randomInt(1, 20);
@@ -188,7 +188,7 @@ export const generateIntegerQuestion = (level = 1) => {
         answer = x;
       }
       break;
-    case 3: // Absolute Value & Basics
+    case 3: 
       {
         const a = randomInt(-30, -5);
         const b = randomInt(5, 20);
@@ -196,21 +196,21 @@ export const generateIntegerQuestion = (level = 1) => {
         answer = Math.abs(a) + b;
       }
       break;
-    case 4: // Ratios & Proportions
+    case 4: 
       {
         const base = randomInt(2, 6);
         const mult = randomInt(2, 5);
         const type = randomInt(1, 2);
         if (type === 1) {
           q = `Simplify ratio ${base * mult}:${mult}`;
-          answer = base; // simplified to base:1, answering just the primary number
+          answer = base; 
         } else {
           q = `If 1 toy costs $${base}, how much for ${mult}?`;
           answer = base * mult;
         }
       }
       break;
-    case 5: // Simple Percentages
+    case 5: 
       {
         const percentages = [10, 20, 25, 50];
         const pct = percentages[randomInt(0, percentages.length - 1)];
@@ -268,7 +268,7 @@ export const generateRacerQuestion = () => {
   const index = Math.floor(Math.random() * RACER_QUESTIONS_BANK.length);
   const data = RACER_QUESTIONS_BANK[index];
   
-  // Return format expected by the Game component
+  
   return {
     question: data.q,
     options: data.options,
