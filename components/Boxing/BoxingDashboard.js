@@ -81,7 +81,7 @@ const BoxingDashboard = ({ progress, onPlay, onBack, updateProgress }) => {
                 <${ArrowLeft} size=${18} /> Exit Gym
             </button>
             <div className="text-center mt-6 md:mt-0">
-               <h1 className="text-6xl md:text-8xl font-bold italic arcade-font text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 drop-shadow-[0_0_20px_rgba(59,130,246,0.5)] uppercase">BOXING</h1>
+               <h1 className="text-6xl md:text-8xl font-bold italic arcade-font text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 drop-shadow-[0_0_20px_rgba(59,130,246,0.5)] uppercase">INTEGER IMPACT</h1>
                <p className="text-blue-500 font-mono text-xs tracking-[0.5em] mt-2 uppercase font-black">Binary Boxing Arena Protocol</p>
             </div>
             <div className="hidden md:block w-40"></div>
