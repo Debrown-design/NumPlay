@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumPlay - Arcade Math</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        :root { --neon-cyan: #06b6d4; --neon-pink: #d946ef; }
+        body { 
+            background-image: url('https://cdn.wallpapersafari.com/38/20/Qvq0Me.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #020617; 
+            color: #f8fafc; 
+            overflow-x: hidden; 
+            font-family: 'Orbitron', sans-serif; 
+        }
+        .arcade-font { font-family: 'Bangers', cursive; letter-spacing: 0.1em; }
+        .retro-font { font-family: 'Press Start 2P', cursive; font-size: 0.7rem; }
+        .scanlines::after {
+            content: ""; position: fixed; inset: 0; pointer-events: none;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.2) 50%),
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+            background-size: 100% 4px, 3px 100%; z-index: 100; opacity: 0.4;
+        }
+        @keyframes drift { from { background-position: 0 0; } to { background-position: 100% 100%; } }
+        .grid-bg {
+            background-image: linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+            background-size: 60px 60px; 
+            animation: drift 60s linear infinite;
+        }
+    </style>
+    <script type="importmap">
+
+</script>
+</head>
+<body class="scanlines">
+    <div id="root"></div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

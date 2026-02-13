@@ -1,0 +1,7 @@
+{
+  "name": "NumPlay",
+  "description": "An arcade-style math journey where players unlock items via AI-generated quizzes and battle through arithmetic challenges.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
