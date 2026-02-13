@@ -268,7 +268,7 @@ export const generateRacerQuestion = () => {
   const index = Math.floor(Math.random() * RACER_QUESTIONS_BANK.length);
   const data = RACER_QUESTIONS_BANK[index];
   
-  
+
   return {
     question: data.q,
     options: data.options,

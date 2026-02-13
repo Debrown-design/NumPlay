@@ -20,8 +20,8 @@ export interface InventoryItem {
   id: string;
   name: string;
   description: string;
-  icon?: string; // Emoji icon
-  image?: string; // Image URL
+  icon?: string; 
+  image?: string; 
   bonus: string;
 }
 
@@ -32,23 +32,23 @@ export interface QuizQuestion {
 }
 
 export interface NinjaProgress {
-  level: number; // 1-12 (Grade levels)
-  currentScore: number; // Score of the current active run
-  highScore: number; // Best score achieved in a single run
-  lifetimeScore: number; // Total accumulated score across all games
+  level: number; 
+  currentScore: number; 
+  highScore: number; 
+  lifetimeScore: number; 
   totalRoundsPlayed: number;
   lives: number;
-  livesLostAt: number[]; // Array of timestamps for each lost life
-  unlockedSwords: string[]; // IDs of unlocked swords
+  livesLostAt: number[]; 
+  unlockedSwords: string[]; 
   equippedSwordId: string;
-  history: { date: string; score: number }[]; // History of past game scores
+  history: { date: string; score: number }[]; 
 }
 
 export interface RacerProgress {
   wins: number;
   totalRaces: number;
-  rankPoints: number; // For leaderboard (High Score)
-  currentSessionScore: number; // Score tracked for "Resume Game" functionality
+  rankPoints: number; 
+  currentSessionScore: number; 
   unlockedCars: string[];
   equippedCarId: string;
   history: { date: string; rank: number; score: number }[];
