@@ -7,7 +7,7 @@ import { Heart, XCircle, Zap, Clock, Trophy, ShieldAlert, Award } from 'lucide-r
 const html = htm.bind(React.createElement);
 
 const SWORDS = {
-  'basic': { id: 'basic', img: 'https://medievalextreme.com/wp-content/uploads/2019/10/A3651DA2-3A2B-4049-80F8-19666531B297.jpeg', color: '#cbd5e1' }, 
+  'basic': { id: 'basic', img: 'https://img2.cgtrader.com/items/2456398/d9c0d9b369/simple-sword-3d-model-blend.jpg', color: '#cbd5e1' }, 
   'gold': { id: 'gold', img: 'https://spirit.scene7.com/is/image/Spirit/01588672-a?$Detail$', color: '#fbbf24' }, 
   'diamond': { id: 'diamond', img: 'https://wallpapercave.com/wp/wp6922828.jpg', color: '#60a5fa' } 
 };
