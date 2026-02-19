@@ -1,9 +1,10 @@
 const API_BASE_URL = 'mongodb+srv://dev:dev@cluster0.ilwwy5p.mongodb.net/?appName=Cluster0';
 
 const LOCAL_KEYS = {
-  USER: 'prime_lab_user_v1',
-  NINJA: 'prime_lab_ninja_v1',
-  RACER: 'prime_lab_racer_v1'
+  USER: 'num_play_user_v1',
+  NINJA: 'num_play_ninja_v1',
+  RACER: 'num_play_racer_v1',
+  BOXER: 'num_play_boxer_v1',
 };
 
 export const storageService = {
