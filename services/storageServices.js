@@ -1,4 +1,4 @@
-const API_BASE_URL = 'mongodb+srv://dev:dev@cluster0.ilwwy5p.mongodb.net/?appName=Cluster0';
+//const API_BASE_URL = 'mongodb+srv://dev:dev@cluster0.ilwwy5p.mongodb.net/?appName=Cluster0';
 
 const LOCAL_KEYS = {
   USER: 'num_play_user_v1',
