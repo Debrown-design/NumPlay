@@ -8,8 +8,8 @@ import NinjaGame from './components/MathNinja/NinjaGame.js';
 import RacerDashboard from './components/MathRacers/RacerDashboard.js';
 import RacerGame from './components/MathRacers/RacerGame.js';
 import BoxingDashboard from './components/Boxing/BoxingDashboard.js';
-//import BoxingGame from './components/Boxing/BoxingGame.js';
-import { storageService } from './services/storageServices.js';
+import BoxingGame from './components/Boxing/BoxingGame.js';
+import { storageService } from '../storageServices.js';
 import { Loader2, Database, WifiOff, ShieldCheck } from 'lucide-react';
 
 const html = htm.bind(React.createElement);
